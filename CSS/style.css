@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0f172a 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.container {
+    background: #475569;
+    border-radius: 1rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    width: 100%;
+    max-width: 900px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #e2e8f0;
+    margin-bottom: 2rem;
+}
+
+.input-section {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+#taskInput {
+    flex: 1;
+    background: #1e293b;
+    color: #e2e8f0;
+    border: 1px solid #475569;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.2s;
+}
+
+#taskInput:focus {
+    box-shadow: 0 0 0 2px #818cf8;
+    border-color: #818cf8;
+}
+
+#dateInput {
+    background: #1e293b;
+    color: #cbd5e1;
+    border: 1px solid #475569;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.2s;
+}
+
+#dateInput:focus {
+    box-shadow: 0 0 0 2px #818cf8;
+    border-color: #818cf8;
+}
+
+.btn-add {
+    background: #a5b4fc;
+    color: #0f172a;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-add:hover {
+    background: #818cf8;
+}
+
+.filter-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+#filterSelect {
+    background: #1e293b;
+    color: #cbd5e1;
+    border: 1px solid #475569;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-delete-all {
+    background: #a5b4fc;
+    color: #0f172a;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-delete-all:hover {
+    background: #818cf8;
+}
+
+.table-container {
+    background: #1e293b;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.table-header {
+    display: grid;
+    grid-template-columns: 5fr 3fr 2fr 2fr;
+    gap: 1rem;
+    background: #0f172a;
+    padding: 1rem 1.5rem;
+    color: #94a3b8;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+#todoList {
+    min-height: 200px;
+}
+
+.empty-state {
+    text-align: center;
+    color: #94a3b8;
+    padding: 4rem 0;
+}
+
+.todo-item {
+    display: grid;
+    grid-template-columns: 5fr 3fr 2fr 2fr;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    border-top: 1px solid #334155;
+    align-items: center;
+    transition: background 0.2s;
+}
+
+.todo-item:hover {
+    background: #334155;
+}
+
+.task-text {
+    color: #e2e8f0;
+}
+
+.task-text.completed {
+    text-decoration: line-through;
+    color: #64748b;
+}
+
+.due-date {
+    color: #94a3b8;
+    font-size: 0.875rem;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.status-pending {
+    background: #713f12;
+    color: #fde047;
+}
+
+.status-completed {
+    background: #14532d;
+    color: #86efac;
+}
+
+.actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn-complete {
+    background: #16a34a;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: background 0.2s;
+}
+
+.btn-complete:hover {
+    background: #15803d;
+}
+
+.btn-delete {
+    background: #dc2626;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: background 0.2s;
+}
+
+.btn-delete:hover {
+    background: #b91c1c;
+}
